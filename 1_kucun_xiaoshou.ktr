@@ -1,0 +1,2066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>1_kucun_xiaoshou</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <size_limit_lines/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+      <slaveserver>
+        <name>carte44</name>
+        <hostname>115.28.39.44</hostname>
+        <port>18083</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86adf9b8aba10a4798cc2fe82</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>smart.st-sat.com</name>
+        <hostname>smart.st-sat.com</hostname>
+        <port>9188</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86adf9b8aba10a4798cc2fe82</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2019/01/23 17:29:54.122</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2019/01/23 17:29:54.122</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+    <notepad>
+      <note>1</note>
+      <xloc>736</xloc>
+      <yloc>208</yloc>
+      <width>20</width>
+      <heigth>30</heigth>
+      <fontname>Microsoft YaHei UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>1</note>
+      <xloc>704</xloc>
+      <yloc>160</yloc>
+      <width>20</width>
+      <heigth>30</heigth>
+      <fontname>Microsoft YaHei UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+  </notepads>
+  <connection>
+    <name>PostgreSQLdestination</name>
+    <server>${aoip}</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>${aodb}</database>
+    <port>${aopt}</port>
+    <username>${aour}</username>
+    <password>${aopd}</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>EXTRA_OPTION_POSTGRESQL.stringtype</code>
+        <attribute>unspecified</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>${aopt}</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Sqlserver_resource</name>
+    <server>${reip}</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>${redb}</database>
+    <port>${rept}</port>
+    <username>${reur}</username>
+    <password>${repd}</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQLUseIntegratedSecurity</code>
+        <attribute>false</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>${rept}</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>style</from>
+      <to>流查询</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>style</from>
+      <to>流查询 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>字符串替换6 2 2</from>
+      <to>sale_order_detail  2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>流查询</from>
+      <to>过滤记录</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>流查询 2</from>
+      <to>过滤记录 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>生成随机数 3 2 2 2 2</from>
+      <to>字符串替换6 2 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>过滤记录 2</from>
+      <to>生成随机数 3 2 2 2 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>dbo.inventory 2</from>
+      <to>流查询</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>dbo.odetail 2</from>
+      <to>流查询 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>执行SQL脚本 2 2</from>
+      <to>dbo.odetail 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>过滤记录</from>
+      <to>字段选择</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>字段选择</from>
+      <to>inventory_actual 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>字段选择</from>
+      <to>字段选择 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>字段选择 2</from>
+      <to>获取系统信息</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>获取系统信息</from>
+      <to>字段选择 2 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Execute SQL script 2</from>
+      <to>dbo.inventory 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>字段选择 2 2</from>
+      <to>Memory Group by 3 2 2 2 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Memory Group by 3 2 2 2 2</from>
+      <to>获取系统信息 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>获取系统信息 2</from>
+      <to>agg_day_shop_inventory_ratio 2 2</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Execute SQL script 2</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>PostgreSQLdestination</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>delete  from agg_day_shop_inventory_ratio  where agg_date>=to_char(current_date,'yyyymmdd')</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>128</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Memory Group by 3 2 2 2 2</name>
+    <type>MemoryGroupBy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <give_back_row>N</give_back_row>
+    <group>
+      <field>
+        <name>shop_id</name>
+      </field>
+      <field>
+        <name>agg_date</name>
+      </field>
+      <field>
+        <name>style</name>
+      </field>
+      <field>
+        <name>color</name>
+      </field>
+      <field>
+        <name>size</name>
+      </field>
+    </group>
+    <fields>
+      <field>
+        <aggregate>inventory_qty</aggregate>
+        <subject>qty</subject>
+        <type>SUM</type>
+        <valuefield/>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1104</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>agg_day_shop_inventory_ratio 2 2</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>PostgreSQLdestination</connection>
+    <schema/>
+    <table>agg_day_shop_inventory_ratio</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+      <field>
+        <column_name>shop_id</column_name>
+        <stream_name>shop_id</stream_name>
+      </field>
+      <field>
+        <column_name>agg_date</column_name>
+        <stream_name>agg_date</stream_name>
+      </field>
+      <field>
+        <column_name>style_id</column_name>
+        <stream_name>style</stream_name>
+      </field>
+      <field>
+        <column_name>color</column_name>
+        <stream_name>color</stream_name>
+      </field>
+      <field>
+        <column_name>size</column_name>
+        <stream_name>size</stream_name>
+      </field>
+      <field>
+        <column_name>inventory_qty</column_name>
+        <stream_name>inventory_qty</stream_name>
+      </field>
+      <field>
+        <column_name>created_at</column_name>
+        <stream_name>created</stream_name>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1360</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>dbo.inventory 2</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>Sqlserver_resource</connection>
+    <sql>select replace(newid(),'-',''), a.site, a.style, a.color, a.size, a.qty from dbo.inventory   a
+
+
+where  a.qty>0  
+and  a.site  in
+('Z055502 '
+,'Z059108 '
+,'LY0004'
+,'Z051004 '
+,'Z051007 '
+,'Z02713'
+,'Z02704'
+,'Z02101'
+,'Z051002 '
+,'Z02503'
+,'LY0009'
+,'LY0010'
+,'Z02512'
+,'LY0012'
+,'LY0013'
+,'Z01018'
+,'Z0211203'
+,'Z02402'
+,'Z02403'
+,'Z075539 '
+,'Z075540 '
+,'Z075541 '
+,'Z075566 '
+,'Z041102 '
+,'Z089803 '
+,'Z051005 '
+,'Z043104 '
+,'Z02110'
+,'Z02710'
+,'Z02201'
+,'Z02506'
+,'Z075535 '
+,'Z02204'
+,'IFZ043108 '
+,'IFZ075507 '
+,'Z02401'
+,'Z057404 '
+,'Z051402 '
+,'Z043202 '
+,'LY0029-C'
+,'LY0030-C'
+,'Z057108 '
+,'Z043111 '
+,'IFZ057108 '
+,'IFLY0013'
+,'IFLY0026-C'
+,'IFZ051208 '
+,'IFZ057411 '
+,'Z075604 '
+,'Z075594 '
+,'IFZ075509 '
+,'Z043112 '
+,'Z059105 '
+,'Z075525 '
+,'IFZ01001'
+,'Z02212'
+,'Z01031'
+,'IFZ01002'
+,'Z051207 '
+,'LY0007'
+,'LY0014'
+,'UY0015-C'
+,'Z02104'
+,'UY0016-C'
+,'UY0017-C'
+,'UY0018-C'
+,'Z043106 '
+,'Z089802 '
+,'Z089806 '
+,'Z075508 '
+,'Z071002 '
+,'Z01021'
+,'IFZ02405'
+,'Z075596 '
+,'Z051602 '
+,'Z071902 '
+,'Z051603 '
+,'Z055001 '
+,'Z075523 '
+,'Z075522 '
+,'LY0001'
+,'LY0002'
+,'UY0019-C'
+,'Z02722'
+,'UY0022-C'
+,'LY0022-C'
+,'Z02412'
+,'Z043113 '
+,'Z075597 '
+,'Z089809 '
+,'Z02406'
+,'ZN007 '
+,'Z02208'
+,'Z01009'
+,'Z075519 '
+,'Z02202'
+,'Z031501 '
+,'Z071901 '
+,'Z043107 '
+,'Z051205 '
+,'LY0023-C'
+,'Z01022'
+,'Z043110 '
+,'Z075534 '
+,'Z075593 '
+,'LY0006'
+,'Z07553109 '
+,'Z02501'
+,'Z01020'
+,'Z02720'
+,'F329-1'
+,'Z025031 '
+,'LY0005'
+,'Z02211'
+,'LY0008'
+,'Z057702 '
+,'Z059110 '
+,'Z057703 '
+,'Z057704 '
+,'Z075503 '
+,'Z075502 '
+,'Z057401 '
+,'Z057101 '
+,'Z057402 '
+,'Z02511'
+,'Z075507 '
+,'IFZ043112 '
+,'LY0025-C'
+,'IFZ075504 '
+,'IFZ02212'
+,'IFLY0025-C'
+,'IFLY0027-C'
+,'IFLY0028-C'
+,'IFLY0030-C'
+,'IFLY0032-C'
+,'IFUY0015-C'
+,'UY0020-C'
+,'Z075537 '
+,'Z057710 '
+,'LY0028-C'
+,'LY0032-C'
+,'IFZ057708 '
+,'IFZ057709 '
+,'IFZ02209'
+,'Z051401 '
+,'Z043101 '
+,'043102'
+,'Z02707'
+,'Z02703'
+,'Z02706'
+,'0431021 '
+,'IFZ02723'
+,'IFZ051009 '
+,'IFZ057107 '
+,'IFLY0014'
+,'IFLY0011'
+,'S332-2'
+,'LY0033-A'
+,'IFZ02406'
+,'IFZ041101 '
+,'LY0035-A'
+,'IFZ043113 '
+,'Z043114 '
+,'Z045102 '
+,'Z02413'
+,'Z057109 '
+,'Z089810 '
+,'IFZ02213'
+,'Z02516'
+,'IF02101 '
+,'Z075521 '
+,'Z075602 '
+,'Z059104 '
+,'Z057903 '
+,'Z071003 '
+,'Z059401 '
+,'Z02517'
+,'Z043115 '
+,'IFZ02701'
+,'IFZ071001 '
+,'Z071701 '
+,'Z071702 '
+,'IFZ071701 '
+,'IFZ059101 '
+,'Z051907 '
+,'Z057502 '
+,'Z075598 ')
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>272</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>dbo.odetail 2</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>Sqlserver_resource</connection>
+    <sql> select a.cnumber, a.fromsite, a.style ,a.color ,a.size , a.qty, a.io, a.price, a.actcount, a.skje, a.iodate from dbo.odetail a
+
+
+where iodate>dateadd(  day,-15, CONVERT(Nvarchar, GETDATE(), 111)) 
+and a.fromsite  in 
+('Z055502 '
+,'Z059108 '
+,'LY0004'
+,'Z051004 '
+,'Z051007 '
+,'Z02713'
+,'Z02704'
+,'Z02101'
+,'Z051002 '
+,'Z02503'
+,'LY0009'
+,'LY0010'
+,'Z02512'
+,'LY0012'
+,'LY0013'
+,'Z01018'
+,'Z0211203'
+,'Z02402'
+,'Z02403'
+,'Z075539 '
+,'Z075540 '
+,'Z075541 '
+,'Z075566 '
+,'Z041102 '
+,'Z089803 '
+,'Z051005 '
+,'Z043104 '
+,'Z02110'
+,'Z02710'
+,'Z02201'
+,'Z02506'
+,'Z075535 '
+,'Z02204'
+,'IFZ043108 '
+,'IFZ075507 '
+,'Z02401'
+,'Z057404 '
+,'Z051402 '
+,'Z043202 '
+,'LY0029-C'
+,'LY0030-C'
+,'Z057108 '
+,'Z043111 '
+,'IFZ057108 '
+,'IFLY0013'
+,'IFLY0026-C'
+,'IFZ051208 '
+,'IFZ057411 '
+,'Z075604 '
+,'Z075594 '
+,'IFZ075509 '
+,'Z043112 '
+,'Z059105 '
+,'Z075525 '
+,'IFZ01001'
+,'Z02212'
+,'Z01031'
+,'IFZ01002'
+,'Z051207 '
+,'LY0007'
+,'LY0014'
+,'UY0015-C'
+,'Z02104'
+,'UY0016-C'
+,'UY0017-C'
+,'UY0018-C'
+,'Z043106 '
+,'Z089802 '
+,'Z089806 '
+,'Z075508 '
+,'Z071002 '
+,'Z01021'
+,'IFZ02405'
+,'Z075596 '
+,'Z051602 '
+,'Z071902 '
+,'Z051603 '
+,'Z055001 '
+,'Z075523 '
+,'Z075522 '
+,'LY0001'
+,'LY0002'
+,'UY0019-C'
+,'Z02722'
+,'UY0022-C'
+,'LY0022-C'
+,'Z02412'
+,'Z043113 '
+,'Z075597 '
+,'Z089809 '
+,'Z02406'
+,'ZN007 '
+,'Z02208'
+,'Z01009'
+,'Z075519 '
+,'Z02202'
+,'Z031501 '
+,'Z071901 '
+,'Z043107 '
+,'Z051205 '
+,'LY0023-C'
+,'Z01022'
+,'Z043110 '
+,'Z075534 '
+,'Z075593 '
+,'LY0006'
+,'Z07553109 '
+,'Z02501'
+,'Z01020'
+,'Z02720'
+,'F329-1'
+,'Z025031 '
+,'LY0005'
+,'Z02211'
+,'LY0008'
+,'Z057702 '
+,'Z059110 '
+,'Z057703 '
+,'Z057704 '
+,'Z075503 '
+,'Z075502 '
+,'Z057401 '
+,'Z057101 '
+,'Z057402 '
+,'Z02511'
+,'Z075507 '
+,'IFZ043112 '
+,'LY0025-C'
+,'IFZ075504 '
+,'IFZ02212'
+,'IFLY0025-C'
+,'IFLY0027-C'
+,'IFLY0028-C'
+,'IFLY0030-C'
+,'IFLY0032-C'
+,'IFUY0015-C'
+,'UY0020-C'
+,'Z075537 '
+,'Z057710 '
+,'LY0028-C'
+,'LY0032-C'
+,'IFZ057708 '
+,'IFZ057709 '
+,'IFZ02209'
+,'Z051401 '
+,'Z043101 '
+,'043102'
+,'Z02707'
+,'Z02703'
+,'Z02706'
+,'0431021 '
+,'IFZ02723'
+,'IFZ051009 '
+,'IFZ057107 '
+,'IFLY0014'
+,'IFLY0011'
+,'S332-2'
+,'LY0033-A'
+,'IFZ02406'
+,'IFZ041101 '
+,'LY0035-A'
+,'IFZ043113 '
+,'Z043114 '
+,'Z045102 '
+,'Z02413'
+,'Z057109 '
+,'Z089810 '
+,'IFZ02213'
+,'Z02516'
+,'IF02101 '
+,'Z075521 '
+,'Z075602 '
+,'Z059104 '
+,'Z057903 '
+,'Z071003 '
+,'Z059401 '
+,'Z02517'
+,'Z043115 '
+,'IFZ02701'
+,'IFZ071001 '
+,'Z071701 '
+,'Z071702 '
+,'IFZ071701 '
+,'IFZ059101 '
+,'Z051907 '
+,'Z057502 '
+,'Z075598 ')
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>400</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>inventory_actual 2</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>PostgreSQLdestination</connection>
+    <schema/>
+    <table>inventory_actual</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+      <field>
+        <column_name>id</column_name>
+        <stream_name>Field2</stream_name>
+      </field>
+      <field>
+        <column_name>shop_id</column_name>
+        <stream_name>site</stream_name>
+      </field>
+      <field>
+        <column_name>style</column_name>
+        <stream_name>style</stream_name>
+      </field>
+      <field>
+        <column_name>color</column_name>
+        <stream_name>color</stream_name>
+      </field>
+      <field>
+        <column_name>size</column_name>
+        <stream_name>size</stream_name>
+      </field>
+      <field>
+        <column_name>qty</column_name>
+        <stream_name>qty</stream_name>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>880</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>sale_order_detail  2</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>PostgreSQLdestination</connection>
+    <schema/>
+    <table>sale_order_detail</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+      <field>
+        <column_name>id</column_name>
+        <stream_name>id</stream_name>
+      </field>
+      <field>
+        <column_name>no</column_name>
+        <stream_name>cnumber</stream_name>
+      </field>
+      <field>
+        <column_name>shop_id</column_name>
+        <stream_name>fromsite</stream_name>
+      </field>
+      <field>
+        <column_name>style</column_name>
+        <stream_name>style</stream_name>
+      </field>
+      <field>
+        <column_name>color</column_name>
+        <stream_name>color</stream_name>
+      </field>
+      <field>
+        <column_name>size</column_name>
+        <stream_name>size</stream_name>
+      </field>
+      <field>
+        <column_name>qty</column_name>
+        <stream_name>qty</stream_name>
+      </field>
+      <field>
+        <column_name>is_refunds</column_name>
+        <stream_name>io</stream_name>
+      </field>
+      <field>
+        <column_name>tag_price</column_name>
+        <stream_name>price</stream_name>
+      </field>
+      <field>
+        <column_name>discount</column_name>
+        <stream_name>actcount</stream_name>
+      </field>
+      <field>
+        <column_name>discount_price</column_name>
+        <stream_name>skje</stream_name>
+      </field>
+      <field>
+        <column_name>sale_date</column_name>
+        <stream_name>iodate</stream_name>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>896</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>style</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>PostgreSQLdestination</connection>
+    <sql>SELECT
+  id style_id
+
+
+FROM "style"
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>320</xloc>
+      <yloc>0</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>字段选择</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>Field2</name>
+      </field>
+      <field>
+        <name>site</name>
+      </field>
+      <field>
+        <name>style</name>
+      </field>
+      <field>
+        <name>color</name>
+      </field>
+      <field>
+        <name>size</name>
+      </field>
+      <field>
+        <name>qty</name>
+      </field>
+      <field>
+        <name>style_id</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>768</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>字段选择 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>site</name>
+      </field>
+      <field>
+        <name>style</name>
+      </field>
+      <field>
+        <name>color</name>
+      </field>
+      <field>
+        <name>size</name>
+      </field>
+      <field>
+        <name>qty</name>
+      </field>
+      <field>
+        <name>style_id</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>832</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>字段选择 2 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>site</name>
+        <rename>shop_id</rename>
+      </field>
+      <field>
+        <name>style</name>
+      </field>
+      <field>
+        <name>color</name>
+      </field>
+      <field>
+        <name>size</name>
+      </field>
+      <field>
+        <name>qty</name>
+      </field>
+      <field>
+        <name>style_id</name>
+      </field>
+      <field>
+        <name>agg_date</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>agg_date</name>
+        <rename>agg_date</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyyMMdd</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>992</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>字符串替换6 2 2</name>
+    <type>ReplaceString</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>cnumber</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string/>
+        <replace_by_string/>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+        <is_unicode>no</is_unicode>
+      </field>
+      <field>
+        <in_stream_name>fromsite</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string/>
+        <replace_by_string/>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+        <is_unicode>no</is_unicode>
+      </field>
+      <field>
+        <in_stream_name>style</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string/>
+        <replace_by_string/>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+        <is_unicode>no</is_unicode>
+      </field>
+      <field>
+        <in_stream_name>color</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string/>
+        <replace_by_string/>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+        <is_unicode>no</is_unicode>
+      </field>
+      <field>
+        <in_stream_name>size</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string/>
+        <replace_by_string/>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+        <is_unicode>no</is_unicode>
+      </field>
+      <field>
+        <in_stream_name>io</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string/>
+        <replace_by_string/>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+        <is_unicode>no</is_unicode>
+      </field>
+      <field>
+        <in_stream_name>id</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>-</replace_string>
+        <replace_by_string/>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+        <is_unicode>no</is_unicode>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>784</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>执行SQL脚本 2 2</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>PostgreSQLdestination</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>delete  from  sale_order_detail  where sale_date>date_trunc('day', current_date )- interval '15 day'</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>256</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>流查询</name>
+    <type>StreamLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <from>style</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>N</preserve_memory>
+    <sorted_list>N</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>style</name>
+        <field>style_id</field>
+      </key>
+      <value>
+        <name>style_id</name>
+        <rename>style_id</rename>
+        <default/>
+        <type>String</type>
+      </value>
+    </lookup>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>480</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>流查询 2</name>
+    <type>StreamLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <from>style</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>N</preserve_memory>
+    <sorted_list>N</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>style</name>
+        <field>style_id</field>
+      </key>
+      <value>
+        <name>style_id</name>
+        <rename>style_id</rename>
+        <default/>
+        <type>String</type>
+      </value>
+    </lookup>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>496</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>生成随机数 3 2 2 2 2</name>
+    <type>RandomValue</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>id</name>
+        <type>random uuid</type>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>704</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>获取系统信息</name>
+    <type>SystemInfo</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>agg_date</name>
+        <type>today start</type>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>880</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>获取系统信息 2</name>
+    <type>SystemInfo</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>created</name>
+        <type>system date (variable)</type>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1216</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>过滤记录</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to/>
+    <send_false_to/>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>style_id</leftvalue>
+        <function>IS NOT NULL</function>
+        <rightvalue/>
+      </condition>
+    </compare>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>640</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>过滤记录 2</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to/>
+    <send_false_to/>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>style_id</leftvalue>
+        <function>IS NOT NULL</function>
+        <rightvalue/>
+      </condition>
+    </compare>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>608</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>
